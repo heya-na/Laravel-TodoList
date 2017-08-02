@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tasks</title>
-</head>
-<body>
+@extends('layout')
+
+@section('content')
 <h1>{{ $task->body }}</h1>
-</body>
-</html>
+@endsection

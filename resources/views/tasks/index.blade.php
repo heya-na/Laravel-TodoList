@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tasks</title>
-</head>
-<body>
-<ul>
-	@foreach($tasks as $task)
-		<li>{{ $task->body }}</li>
-	@endforeach
-</ul>
-</body>
-</html>
+@extends('layout')
+
+
+@section('content')
+	<ul>
+		@foreach($tasks as $task)
+			<li>{{ $task->body }}</li>
+		@endforeach
+	</ul>
+@endsection

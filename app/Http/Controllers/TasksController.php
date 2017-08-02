@@ -27,6 +27,10 @@ class TasksController extends Controller
 
     	//dd(request()->all());
 
+    	$this->validate(request(), [
+    		'body' => 'required'
+    	]);
+    	
     	//create a new task using the request data
     	$task = new Task;
 

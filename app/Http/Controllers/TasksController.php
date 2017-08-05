@@ -48,4 +48,12 @@ class TasksController extends Controller
 
     	return redirect('/tasks');
     }
+
+    public function mark(Task $task){
+
+    	$task->isComplete = !$task->isComplete;
+    	$task->save();
+    	
+    	return redirect('/tasks');
+    }
 }

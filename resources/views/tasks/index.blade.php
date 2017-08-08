@@ -2,8 +2,8 @@
 
 
 @section('content')
-	<input type="button" name="create" value="Add a new task" onclick="location.href='{{url('/tasks/create')}}'">
-	<table>
+	
+	<table class="table">
 		@foreach($tasks as $task)
 		<tr>
 			<td><input type="checkbox" name="isComplete" 
@@ -13,4 +13,6 @@
 		</tr>
 		@endforeach
 	</table>
+
+ 	<input class="btn btn-default" type="button" name="create" value="Add a new task" onclick="location.href='{{url('/tasks/create')}}'">
 @endsection

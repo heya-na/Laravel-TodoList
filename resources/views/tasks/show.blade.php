@@ -1,5 +1,5 @@
 @extends('layout')
 
 @section('content')
-	<h1>{{ $task->body }}</h1>
+	<h1 class="cover-heading">{{ $task->body }}</h1>
 @endsection
